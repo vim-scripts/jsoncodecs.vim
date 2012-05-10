@@ -1,0 +1,17 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4056
+
+Use g:loaded_jsoncodecs to check if jsoncodecs is loaded
+
+if exists(\"g:loaded_jsoncodecs\")
+    // do what you like
+endif
+It provide the following functions
+
+b:json_dump_string
+
+This functions take a list contains lines as input, output is a valid JSON string
+b:json_dumplines
+
+A utility function print out the result from json_dump_string
+
+ :1,$call b:json_dumplines()
